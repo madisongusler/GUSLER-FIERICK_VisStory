@@ -1,37 +1,86 @@
 body{
-    background-color: #457d58;
-    margin: 0px;
+  background-color: #457d58;
+  margin: 0px;
     padding: 0px;
 }
 .container{
-    background-color: #cbddd1;
-    margin: 0% 10% 0% 10%;
-    padding: 1%;
+  background-color: #cbddd1;
+  margin: 0% 10% 0% 10%;
+  padding: 1%;
 }
 
 h1{
-    font-family: cardo, serif;
-    font-weight: 700;
-    font-size: 48px;
+  font-family: cardo, serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h2{
-    font-family: cardo, serif;
-    font-weight: 400;
-    font-size: 36px;
+  font-family: cardo, serif;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 h3{
-    font-family: cardo, serif;
-    font-weight: 400;
-    font-size: 36px;
-    padding: 2%;
-    background-color: #1f5014;
-    color: #f6f6ed;
+  font-family: cardo, serif;
+  font-weight: 400;
+  font-size: 36px;
+  padding: 2%;
+  background-color: #1f5014;
+  color: #f6f6ed;
 }
 
 p{
-    font-family: didact gothic, sans-serif;
-    font-weight: 400;
-    font-size: 21px;
+  font-family: didact gothic, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+a {
+  color: #1f5014;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* New styles for image containers */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 50%; /* Set the maximum width of the image to 100% */
+  max-height: 20; /* Set the maximum height of the image to 100% */
+  width: ; /* Ensure the width adjusts based on the container size */
+  height: ; /* Ensure the height adjusts based on the container size */
+  border-radius: 2px;
+}
+
+/* Adjusting margin between images */
+.image-container img + img {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Handling responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+  .image-container {
+    flex-wrap: wrap;
+  }
+
+  .image-container img {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+  }
+
+  .image-container img + img {
+    margin-left: 0;
+  }
 }
